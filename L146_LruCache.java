@@ -52,8 +52,8 @@ public class L146_LruCache {
     }
 
     class Node {
-        private int key,value;
-        private Node pre,next;
+        public int key,value;
+        public Node pre,next;
         Node(int key, int value) {
             this.key = key;
             this.value = value;
