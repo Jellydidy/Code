@@ -26,10 +26,8 @@ public class L007 {
                 return null;
             }
 
-            int index = 0;
-            for (int i : inorder) {
-                inOrderMap.put(i,index);
-                index++;
+            for(int i = 0; i < inorder.length; i++) {
+                inOrderMap.put(inorder[i],i);
             }
 
             return build(preorder, 0, preorder.length-1, inorder, 0, inorder.length-1);
